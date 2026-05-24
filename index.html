@@ -1,11 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krazykom - Fashion Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1> Coming Soon </h1>
+<body class="bg-white text-gray-900">
+
+  <!-- Navbar -->
+  <header class="w-full border-b border-gray-200">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold tracking-wide">KRAZYKOM</h1>
+
+      <nav class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#home" class="hover:text-gray-500">Home</a>
+        <a href="#products" class="hover:text-gray-500">Products</a>
+        <a href="#about" class="hover:text-gray-500">About</a>
+        <a href="#contact" class="hover:text-gray-500">Contact</a>
+      </nav>
+
+      <a href="https://wa.me/919999999999" class="bg-black text-white px-5 py-2 rounded-full hover:bg-gray-800 transition">
+        Order Now
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="min-h-screen flex items-center justify-center bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <p class="uppercase tracking-[6px] text-sm text-gray-500 mb-4">
+          Modern Fashion Brand
+        </p>
+
+        <h2 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+          Wear Your
+          <span class="text-gray-500">Style</span>
+        </h2>
+
+        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+          Discover premium shirts, t-shirts, pants, and trending fashion outfits designed for modern style lovers.
+        </p>
+
+        <div class="flex gap-4 flex-wrap">
+          <a href="#products" class="bg-black text-white px-8 py-4 rounded-full hover:bg-gray-800 transition">
+            Shop Now
+          </a>
+
+          <a href="https://wa.me/919999999999" class="border border-black px-8 py-4 rounded-full hover:bg-black hover:text-white transition">
+            WhatsApp Order
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200&auto=format&fit=crop"
+          alt="Fashion Model"
+          class="rounded-3xl shadow-2xl w-full object-cover h-[650px]"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <h3 class="text-4xl font-bold mb-4">Trending Collection</h3>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Explore stylish collections crafted for comfort, confidence, and everyday fashion.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-gray-100 rounded-3xl overflow-hidden shadow-lg hover:scale-105 transition duration-300">
+          <img
+            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop"
+            class="w-full h-96 object-cover"
+          />
+
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-2">Premium T-Shirts</h4>
+            <p class="text-gray-600 mb-5">
+              Stylish oversized and casual t-shirts.
+            </p>
+            <button class="bg-black text-white px-5 py-3 rounded-full w-full">
+              View Collection
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-gray-100 rounded-3xl overflow-hidden shadow-lg hover:scale-105 transition duration-300">
+          <img
+            src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop"
+            class="w-full h-96 object-cover"
+          />
+
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-2">Stylish Shirts</h4>
+            <p class="text-gray-600 mb-5">
+              Modern fit shirts for every occasion.
+            </p>
+            <button class="bg-black text-white px-5 py-3 rounded-full w-full">
+              View Collection
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-gray-100 rounded-3xl overflow-hidden shadow-lg hover:scale-105 transition duration-300">
+          <img
+            src="https://images.unsplash.com/photo-1506629905607-c4d0b7d6e4b6?q=80&w=1200&auto=format&fit=crop"
+            class="w-full h-96 object-cover"
+          />
+
+          <div class="p-6">
+            <h4 class="text-2xl font-bold mb-2">Streetwear Fashion</h4>
+            <p class="text-gray-600 mb-5">
+              Premium street-style fashion outfits.
+            </p>
+            <button class="bg-black text-white px-5 py-3 rounded-full w-full">
+              View Collection
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 bg-black text-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-4xl font-bold mb-6">About Krazykom</h3>
+
+      <p class="text-lg leading-relaxed text-gray-300">
+        Krazykom is a modern online fashion brand focused on stylish, trendy, and affordable clothing. We believe fashion should be bold, comfortable, and accessible to everyone.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+      <h3 class="text-4xl font-bold mb-6">Contact Us</h3>
+
+      <p class="text-gray-600 mb-10">
+        Place your orders directly through WhatsApp.
+      </p>
+
+      <a
+        href="https://wa.me/919999999999"
+        class="bg-green-500 hover:bg-green-600 text-white px-10 py-5 rounded-full text-lg font-semibold transition"
+      >
+        Chat on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-8 text-center">
+    <p>
+      © 2026 Krazykom. All Rights Reserved.
+    </p>
+  </footer>
+
 </body>
 </html>
